@@ -15,11 +15,14 @@ const library = [
     readingStatus: false,
   },
 ];
-
+ 
 const numberOfBooksRead = () => {
   // write your code here
+	let cnt = 0;
+	for(let i=0; i<library.length; i++){
+		if(i.readingStatus === true){
+			cnt++;
+		}
+	}
+	return cnt;	
 };
-
-// Do not change the code below
-
-alert(numberOfBooksRead());
